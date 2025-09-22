@@ -983,26 +983,26 @@
             </div>
             <div class="contact-content">
                 <div class="contact-form">
-                    <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSd0pH46LZr8RNOvFm6JqWEo2JjkIyv2uUz8RjKZAkzVKWFbRA/formResponse" method="POST" target="hidden_iframe">
+                    <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdHD1Uypzt3y2WYLK8yBtU_aXPWtCvLqA-RxutavEDRiS7jYA/formResponse" method="POST" target="hidden_iframe">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="entry.258612672" required>
+                            <input type="text" id="name" name="entry.668506385" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="entry.1453776876" required>
+                            <input type="email" id="email" name="entry.2029267146" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="entry.152451160" required>
+                            <input type="tel" id="phone" name="entry.1705739702" required>
                         </div>
                         <div class="form-group">
                             <label for="company">Company Name</label>
-                            <input type="text" id="company" name="entry.161082584">
+                            <input type="text" id="company" name="entry.776831628">
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject *</label>
-                            <select id="subject" name="entry.734492977" required>
+                            <select id="subject" name="entry.1833166963" required>
                                 <option value="">Select a subject...</option>
                                 <option value="General Inquiry">General Inquiry</option>
                                 <option value="Product Information">Product Information</option>
@@ -1014,7 +1014,7 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message *</label>
-                            <textarea id="message" name="entry.998752319" rows="5" required placeholder="Please provide details about your inquiry..."></textarea>
+                            <textarea id="message" name="entry.1047247389" rows="5" required placeholder="Please provide details about your inquiry..."></textarea>
                         </div>
                         <button type="submit" class="submit-btn">
                             <span class="btn-text">Send Message</span>
@@ -1031,14 +1031,14 @@
                         <div class="contact-icon">📧</div>
                         <div>
                             <h3>Email</h3>
-                            <p>info@swamipulppackers.com</p>
+                            <p>swamipulppacker123@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📞</div>
                         <div>
                             <h3>Phone</h3>
-                            <p>+1 (555) 123-4567</p>
+                            <p>+91-9815319127<br>+91-8054019127</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1087,8 +1087,8 @@
                 </div>
                 <div class="footer-section">
                     <h3>Connect</h3>
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
+                    <a href="https://www.instagram.com/swamipulppackers">Instagram</a>
+                    <a href="https://www.facebook.com/people/Swami-Pulp-Packer/100091273716092">Facebook</a>
                     <a href="https://www.indiamart.com/swamipulp-packers/">IndiaMart</a>
                 </div>
             </div>
@@ -1099,7 +1099,7 @@
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/911234567890?text=Hello!%20I%20saw%20your%20website%20and%20want%20to%20know%20more%20about%20your%20products"
+    <a href="https://wa.me/919815319127?text=Hello!%20I%20saw%20your%20website%20and%20want%20to%20know%20more%20about%20your%20products"
         class="whatsapp-float" 
         target="_blank"
         aria-label="Chat on WhatsApp">
@@ -1232,17 +1232,17 @@
             } catch (error) {
                 const formData = new FormData(contactForm);
                 const emailBody = `
-Name: ${formData.get('entry.258612672')}
-Email: ${formData.get('entry.1453776876')}
-Phone: ${formData.get('entry.152451160') || 'Not provided'}
-Company: ${formData.get('entry.161082584') || 'Not provided'}
-Subject: ${formData.get('entry.734492977')}
+Name: ${formData.get('entry.668506385')}
+Email: ${formData.get('entry.2029267146')}
+Phone: ${formData.get('entry.1705739702')}
+Company: ${formData.get('entry.776831628') || 'Not provided'}
+Subject: ${formData.get('entry.1833166963')}
 
 Message:
-${formData.get('entry.998752319')}
+${formData.get('entry.1047247389')}
                 `.trim();
 
-                const mailtoLink = `mailto:info@swamipulppackers.com?subject=Contact Form: ${formData.get('entry.734492977')}&body=${encodeURIComponent(emailBody)}`;
+                const mailtoLink = `mailto:swamipulppacker123@gmail.com?subject=Contact Form: ${formData.get('entry.1833166963')}&body=${encodeURIComponent(emailBody)}`;
                 window.location.href = mailtoLink;
                 
                 showStatus('Your email client will open with the message pre-filled. Please send the email to complete your inquiry.', 'success');
