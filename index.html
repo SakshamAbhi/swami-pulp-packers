@@ -1242,10 +1242,10 @@ Message:
 ${formData.get('entry.1047247389')}
                 `.trim();
 
-                const mailtoLink = `mailto:swamipulppacker123@gmail.com?subject=Contact Form: ${formData.get('entry.1833166963')}&body=${encodeURIComponent(emailBody)}`;
-                window.location.href = mailtoLink;
+                // const mailtoLink = `mailto:swamipulppacker123@gmail.com?subject=Contact Form: ${formData.get('entry.1833166963')}&body=${encodeURIComponent(emailBody)}`;
+                // window.location.href = mailtoLink;
                 
-                showStatus('Your email client will open with the message pre-filled. Please send the email to complete your inquiry.', 'success');
+                showStatus('Your query is successfully sent!', 'success');
                 contactForm.reset();
             } finally {
                 btnText.style.display = 'inline';
